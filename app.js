@@ -20,10 +20,11 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
     
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/yelp_camp_v12");
+//mongoose.connect("mongodb://localhost/yelp_camp_v12");
+mongoose.connect(process.env.DATABASEURL);
 app.use(methodOverride("_method"));
 app.use(flash());
-//seedDB();
+seedDB();
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
