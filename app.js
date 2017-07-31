@@ -21,8 +21,7 @@ var commentRoutes    = require("./routes/comments"),
     
 mongoose.Promise = global.Promise;
 //mongoose.connect("mongodb://localhost/yelp_camp_v12");
-//mongoose.connect(process.env.DATABASEURL);
-mongoose.connect("mongodb://hammad:password123@ds127993.mlab.com:27993/yelpcamp_final");
+mongoose.connect(process.env.DATABASEURL);
 app.use(methodOverride("_method"));
 app.use(flash());
 //seedDB();
