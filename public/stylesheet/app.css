@@ -1,0 +1,30 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail{
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.delete-form {
+    display: inline;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.flex-wrap {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/*.thumbnail image{*/
+/*    max-height: 100%;*/
+/*    max-width: 100%;*/
+/*    display: block;*/
+/*}*/
